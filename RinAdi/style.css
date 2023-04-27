@@ -8,9 +8,15 @@ body{
     width: 100%;
     box-sizing: border-box;
     font-family: Inter;
-    background-color: grey;
+    background-color: #353535;
 }
 
+/* menu */
+.logo img{
+    width: 121px;
+    display: flex;
+    align-items: center;
+}
 .bg{
     background-color: white;
 }
@@ -33,32 +39,144 @@ nav{
     position: relative;
 }
 .search input{
-    height: 46px;
-    width: 446px;
+    height: 34px;
+    width: 235px;
+    padding-left: 35px;
     border-radius: 25px;
-    padding-left: 20px;
 }
 .search img{
     position: absolute;
-    right: 0;
-    padding: 11px;
+    left: 0;
+    padding: 7px;
+}
+.nav-icons{
+    display: flex;
 }
 .nav-icons img{
-    margin-left: 40px;
+    width: 23px;
+    margin-left: 35px;
 }
-header{
-    padding-top: 50px;
-    padding-bottom: 70px;
+.menu{
     max-width: 500px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
-    color: #3E3D3D;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
 }
-.main{
+.menu-title{
+    margin-left: 25px;
+    border-bottom: 2px solid transparent;
+}
+.menu-title a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-title_active{
+    border-bottom: 2px solid #E30B13;
+}
+
+
+/* index */
+header{
+    background-image: url('img/bg.png');
+    width: 100%;
+    height: 819px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_title{
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+.header_info{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #E30B13;
+}
+.title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 71px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 85px;
+}
+.wrapper{
+}
+.sales{
+    background-color: #000;
+    padding-bottom: 85px;
+}
+.sales_posters{
+    display: flex;
+    justify-content: center;
+    gap: 33px;
+}
+.about{
+    background-color: #7c0004ea;
+    padding-bottom: 40px;
+}
+.about_info{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 62px;
+}
+.about_posters{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 37px;
+}
+.news{
+    background-color: #fff;
+    margin: 191px 30px 0 30px;
+    border-radius: 20px;
+}
+.news_title{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 59px;
+    color: #000000;
+    text-align: center;
+    padding: 30px 0 90px 0;
+}
+.news_cards{
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+.news_card{
+    border: 2px solid #9D9D9D;
+    max-width: 330px;
+    border-radius: 17px;
+    font-weight: bold;
+    margin-bottom: 176px;
+}
+.news_card_data{
+    margin: 6px 0 0 13px;
+}
+.news_card_title{
+    margin: 6px 0 29px 13px;
+}
+
+
+/* catalog */
+.main{  
+    padding-top: 119px;
     max-width: 870px;
     margin: auto;
     display: flex;
@@ -85,6 +203,8 @@ header{
     align-items: center;
     justify-content: center;
 }
+
+/* footer */
 footer{
     background: #242323;
     color: #9D9D9D;
